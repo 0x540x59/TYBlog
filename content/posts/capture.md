@@ -1,5 +1,5 @@
 +++
-title = 'Capture'
+title = '抓包'
 date = 2024-08-16T10:28:03+08:00
 draft = false
 tags = ["抓包", "逆向"]
