@@ -1,9 +1,9 @@
-+++
-title = '代理中继'
-date = 2024-08-27T18:21:02+08:00
-draft = false
-ShowToc = true
-+++
+---
+ShowToc: true
+date: "2024-08-27T18:21:02+08:00"
+draft: false
+title: 代理中继
+---
 
 遇到个比较奇葩的需求，要跨VPC下载文件，还跨了两个，如图。Account1和 Account2是两个不同云厂商的独立账号，账号内的VPC是网络是互通的，账号间本来是不通的。我们组由于要支持两个account的业务，所以把我们的vpc用vpn隧道打通了，即vpc2和vpc3是通的。但现在另外一组在vpc1说需要从account2那边定期下载文件，而文件提供方在vpc4中，因此他们的网络是不通的。
 

@@ -1,10 +1,12 @@
-+++
-title = 'Hadoop单机测试环境'
-date = 2024-08-27T09:26:50+08:00
-draft = false
-tags = ['大数据', 'hadoop']
-ShowToc = true
-+++
+---
+ShowToc: true
+date: "2024-08-27T09:26:50+08:00"
+draft: false
+tags:
+- 大数据
+- hadoop
+title: Hadoop单机测试环境
+---
 
 有时需要测试一些大数据组件，只需要hadoop+hive基础环境，云厂商的EMR往往都是2~3个节点起步，有些还master，core，task各种角色节点必须齐备。不仅贵，集群改起配置来还麻烦。记录一下单机测试环境搭建。
 

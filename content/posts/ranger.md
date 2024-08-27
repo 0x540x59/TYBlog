@@ -1,9 +1,9 @@
-+++
-title = 'PrestoDB开启Ranger权限控制'
-date = 2024-08-27T13:44:48+08:00
-draft = false
-ShowToc = true
-+++
+---
+ShowToc: true
+date: "2024-08-27T13:44:48+08:00"
+draft: false
+title: PrestoDB开启Ranger权限控制
+---
 
 # 说明
 
