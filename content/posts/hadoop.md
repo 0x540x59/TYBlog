@@ -2,9 +2,8 @@
 title = 'Hadoop单机测试环境'
 date = 2024-08-27T09:26:50+08:00
 draft = false
-
 tags = ['大数据', 'hadoop']
-
+ShowToc = true
 +++
 
 有时需要测试一些大数据组件，只需要hadoop+hive基础环境，云厂商的EMR往往都是2~3个节点起步，有些还master，core，task各种角色节点必须齐备。不仅贵，集群改起配置来还麻烦。记录一下单机测试环境搭建。
@@ -128,40 +127,40 @@ export HIVE_AUX_JARS_PATH="$HIVE_HOME/lib"
 	 <name>javax.jdo.option.ConnectionURL</name>
 	 <value>jdbc:mysql://localhost:3306/hive_metastore?useSSL=false</value>
 	</property>
-	
+
 	<property>
 	 <name>javax.jdo.option.ConnectionDriverName</name>
 	 <value>com.mysql.cj.jdbc.Driver</value>
 	</property>
-	
+
 	<property>
 	 <name>javax.jdo.option.ConnectionUserName</name>
 	 <value>root</value>
 	</property>
-	
+
 	<property>
 	 <name>javax.jdo.option.ConnectionPassword</name>
 	 <value>root</value>
 	</property>
-	
+
 	<!-- H2S运行绑定host -->
 	<property>
 	    <name>hive.server2.thrift.bind.host</name>
 	    <value>localhost</value>
 	</property>
-	
+
 	<!-- 远程模式部署metastore metastore地址 -->
 	<property>
 	    <name>hive.metastore.uris</name>
 	    <value>thrift://localhost:9083</value>
 	</property>
-	
+
 	<!-- 关闭元数据存储授权  -->
 	<property>
 	    <name>hive.metastore.event.db.notification.api.auth</name>
 	    <value>false</value>
 	</property>
-	
+
 	<!-- 关闭元数据存储版本的验证 -->
 	<property>
 	    <name>hive.metastore.schema.verification</name>

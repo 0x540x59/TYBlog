@@ -1,0 +1,15 @@
+baseURL: https://0x540x59.github.io/
+languageCode: zh-cn
+title: 胡言乱语
+theme: PaperMod
+params:
+  homeInfoParams:
+    Title: Hello World!
+    Content: 记录一下遇到过的一些场景，好像也没法归类成体系，知识都学杂了。想到哪写到哪，写到哪算哪吧，权当是我自己的胡言乱语。
+
+  socialIcons: # optional
+    - name: "github"
+      url: "https://github.com/twoyang0917"
+    - name: "email"
+      url: "twoyang0917@gmail.com"
+
